@@ -1,0 +1,833 @@
+{
+  "updatedAt": "2026-06-15T09:41:58.865Z",
+  "edition": {
+    "windowHours": 24,
+    "quiet": false
+  },
+  "digest": null,
+  "topStory": {
+    "id": "d528734b876e",
+    "title": "“Quelli che…”, Cardone: “Servono 19,5 milioni per rientrare negli indici, il ripianamento può avvenire in qualsiasi momento per sbloccare il mercato”.",
+    "url": "https://www.lazialita.com/2026/06/15/quelli-che-cardone-servono-195-milioni-per-rientrare-negli-indici-il-ripianamento-puo-avvenire-in-qualsiasi-momento-per-sbloccare-il-mercato/",
+    "image": null,
+    "source": "Lazialità",
+    "publishedAt": "2026-06-15T09:25:13.000Z",
+    "lastAt": "2026-06-15T09:25:13.000Z",
+    "coverage": 4,
+    "sources": [
+      {
+        "name": "Lazialità",
+        "url": "https://www.lazialita.com/2026/06/15/quelli-che-cardone-servono-195-milioni-per-rientrare-negli-indici-il-ripianamento-puo-avvenire-in-qualsiasi-momento-per-sbloccare-il-mercato/",
+        "favicon": "/sources/lazialita.com.png"
+      },
+      {
+        "name": "LazioPress",
+        "url": "https://www.laziopress.it/news/290760592902/mercato-a-saldo-zero-possibile-tesoretto-dalle-cessioni-minori",
+        "favicon": "/sources/laziopress.it.png"
+      },
+      {
+        "name": "LazioNews.eu",
+        "url": "https://www.lazionews.eu/notizie/lotito-mercato-lazio-saldo-zero/",
+        "favicon": "/sources/lazionews.eu.png"
+      },
+      {
+        "name": "La Lazio Siamo Noi",
+        "url": "https://www.lalaziosiamonoi.it/primo-piano/lazio-serve-sbloccare-mercato-lotito-bivio-247307",
+        "favicon": "/sources/lalaziosiamonoi.it.png"
+      }
+    ],
+    "summary": "“Ieri sono riuscito finalmente le cifre esatte, sono 19,5 milioni di euro la cifra necessaria per ripianare e rientrare nella soglia dello 0,7, che sarebbe il parametro della Federcalcio. L’indice della Lazio è 0,82 e quindi non è rientrato e siamo obbligati al mercato a saldo…"
+  },
+  "articles": [
+    {
+      "id": "7ec3123d965b",
+      "title": "Rovella apre all’addio, ma le offerte latitano",
+      "url": "https://www.lazionews.eu/notizie/rovella-calciomercato-offerte/",
+      "source": "LazioNews.eu",
+      "publishedAt": "2026-06-15T09:39:57.000Z",
+      "image": null,
+      "coverage": 2,
+      "momentum": 2,
+      "lastAt": "2026-06-15T09:39:57.000Z",
+      "sources": [
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/notizie/rovella-calciomercato-offerte/",
+          "favicon": "/sources/lazionews.eu.png"
+        },
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/rovella-addio-scongiurato-ultime-centrocampista-lazio-247315",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        }
+      ],
+      "summary": "Il centrocampista della Lazio Nicolò Rovella ha spesso dichiarato amore eterno al club capitolino, ma le ultime vicissitudini potrebbero anche portarlo ad accettare la corte di altre squadre: al momento non ci sarebbero state offerte per l’ex Monza. Gli ultimi aggiornamenti. L…"
+    },
+    {
+      "id": "786c7f2c3200",
+      "title": "Zauri: “Kolarov ancora mi chiama capitano”",
+      "url": "https://www.lazionews.eu/notizie/zauri-intervista-radu-kolarov/",
+      "source": "LazioNews.eu",
+      "publishedAt": "2026-06-15T09:36:37.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T09:36:37.000Z",
+      "sources": [
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/notizie/zauri-intervista-radu-kolarov/",
+          "favicon": "/sources/lazionews.eu.png"
+        }
+      ],
+      "summary": "L’ex terzino della Lazio Luciano Zauri ha rilasciato un’intervista al podcast Doppio Passo in cui ha raccontato diversi aneddoti relativi alla sua esperienza in biancoceleste: in particolare si è soffermato sul rapporto con Radu e Kolarov. LEGGI ANCHE: Rovella apre all’addio, …"
+    },
+    {
+      "id": "d528734b876e",
+      "title": "“Quelli che…”, Cardone: “Servono 19,5 milioni per rientrare negli indici, il ripianamento può avvenire in qualsiasi momento per sbloccare il mercato”.",
+      "url": "https://www.lazialita.com/2026/06/15/quelli-che-cardone-servono-195-milioni-per-rientrare-negli-indici-il-ripianamento-puo-avvenire-in-qualsiasi-momento-per-sbloccare-il-mercato/",
+      "source": "Lazialità",
+      "publishedAt": "2026-06-15T09:25:13.000Z",
+      "image": null,
+      "coverage": 4,
+      "momentum": 4,
+      "lastAt": "2026-06-15T09:25:13.000Z",
+      "sources": [
+        {
+          "name": "Lazialità",
+          "url": "https://www.lazialita.com/2026/06/15/quelli-che-cardone-servono-195-milioni-per-rientrare-negli-indici-il-ripianamento-puo-avvenire-in-qualsiasi-momento-per-sbloccare-il-mercato/",
+          "favicon": "/sources/lazialita.com.png"
+        },
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/290760592902/mercato-a-saldo-zero-possibile-tesoretto-dalle-cessioni-minori",
+          "favicon": "/sources/laziopress.it.png"
+        },
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/notizie/lotito-mercato-lazio-saldo-zero/",
+          "favicon": "/sources/lazionews.eu.png"
+        },
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/primo-piano/lazio-serve-sbloccare-mercato-lotito-bivio-247307",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        }
+      ],
+      "summary": "“Ieri sono riuscito finalmente le cifre esatte, sono 19,5 milioni di euro la cifra necessaria per ripianare e rientrare nella soglia dello 0,7, che sarebbe il parametro della Federcalcio. L’indice della Lazio è 0,82 e quindi non è rientrato e siamo obbligati al mercato a saldo…"
+    },
+    {
+      "id": "39fabb4a4165",
+      "title": "Lazio, ecco di quanto hai sforato l’indice del costo del lavoro allargato: i dati",
+      "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/lazio-sforato-l-indice-costo-lavoro-allargato-dati-247321",
+      "source": "La Lazio Siamo Noi",
+      "publishedAt": "2026-06-15T09:15:09.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T09:15:09.000Z",
+      "sources": [
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/lazio-sforato-l-indice-costo-lavoro-allargato-dati-247321",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        }
+      ],
+      "summary": "RASSEGNA STAMPA - Sarà mercato a saldo zero in estate, a meno che la Lazio non riesca a ripianare la situazione nelle prossime settimane e aprirsi così a un mercato libero, che permetterebbe anche il rinnovo dei contratti dei gi ..."
+    },
+    {
+      "id": "54c335e1bab3",
+      "title": "La petizione dei tifosi della Reggina: \"Reggio Calabria non vuole Lotito\"",
+      "url": "https://www.laziopress.it/news/428199546374/la-petizione-dei-tifosi-della-reggina-reggio-calabria-non-vuole-lotito",
+      "source": "LazioPress",
+      "publishedAt": "2026-06-15T09:12:00.000Z",
+      "image": null,
+      "coverage": 5,
+      "momentum": 3,
+      "lastAt": "2026-06-15T09:12:00.000Z",
+      "sources": [
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/428199546374/la-petizione-dei-tifosi-della-reggina-reggio-calabria-non-vuole-lotito",
+          "favicon": "/sources/laziopress.it.png"
+        },
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/notizie/lettera-cruciani-momento-lazio/",
+          "favicon": "/sources/lazionews.eu.png"
+        },
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/lettera-cruciani-una-lazio-punto-d-arrivo-oggi-247314",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        },
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/lotito-petizione-tifosi-reggina/",
+          "favicon": "/sources/lazionews24.com.png"
+        },
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/news/lazio-unaltra-petizione-reggio-calabria-non-vuole-lotito-liniziativa/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Oltre a gran parte della tifoseria biancoceleste, anche i sostenitori della Reggina si sono espressi duramente contro Claudio Lotito. L'attuale presidente della Lazio avrebbe manifestato interesse..."
+    },
+    {
+      "id": "39ce8b47141f",
+      "title": "Lazio, scelta fatta per la nuova clinica di riferimento: tutti i dettagli",
+      "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/lazio-scelta-fatta-nuova-clinica-riferimento-dettagli-247319",
+      "source": "La Lazio Siamo Noi",
+      "publishedAt": "2026-06-15T09:00:42.000Z",
+      "image": null,
+      "coverage": 4,
+      "momentum": 4,
+      "lastAt": "2026-06-15T09:00:42.000Z",
+      "sources": [
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/lazio-scelta-fatta-nuova-clinica-riferimento-dettagli-247319",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        },
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/notizie/lotito-rivoluzione-formello-staff-medico-fisioterapico/",
+          "favicon": "/sources/lazionews.eu.png"
+        },
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/136141770246/lazio-villa-san-pietro-sara-la-nuova-struttura-di-riferimento",
+          "favicon": "/sources/laziopress.it.png"
+        },
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/news/lazio-definito-il-nuovo-staff-medico-ecco-da-chi-sara-composto/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "RASSEGNA STAMPA - È durato soltanto due anni il rapporto tra la Lazio e Villa Mafalda, la clinica a cui la società biancoceleste si è appoggiata nel corso delle ultime due stagioni dopo il termine della partnership plurie ..."
+    },
+    {
+      "id": "65755c6fa57c",
+      "title": "Calciomercato Lazio, idea Stojkovic per la trequarti! È la richiesta di Gattuso per la trequarti",
+      "url": "https://www.lazionews24.com/calciomercato-lazio-idea-stojkovic-trequarti/",
+      "source": "LazioNews24",
+      "publishedAt": "2026-06-15T08:56:06.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T08:56:06.000Z",
+      "sources": [
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/calciomercato-lazio-idea-stojkovic-trequarti/",
+          "favicon": "/sources/lazionews24.com.png"
+        }
+      ],
+      "summary": "Calciomercato Lazio, il tecnico Rino Gattuso stravede per il gioiello della Dinamo Zagabria! Si tratta di Luka Stojkovic. I dettagli La Lazio accelera le manovre in vista della prossima stagione e si tuffa sul mercato per plasmare la rosa secondo le precise indicazioni del nuo…"
+    },
+    {
+      "id": "3e38205a6960",
+      "title": "Nodo Mandas, tra permanenza e cessione: la Lazio lo valuta 18 milioni",
+      "url": "https://www.laziopress.it/news/15882685958/nodo-mandas-tra-permanenza-e-cessione-la-lazio-lo-valuta-18-milioni",
+      "source": "LazioPress",
+      "publishedAt": "2026-06-15T08:56:00.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T08:56:00.000Z",
+      "sources": [
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/15882685958/nodo-mandas-tra-permanenza-e-cessione-la-lazio-lo-valuta-18-milioni",
+          "favicon": "/sources/laziopress.it.png"
+        }
+      ],
+      "summary": "Nonostante il ritorno a Formello dopo il prestito al Bournemouth, il futuro di Mandas resta ancora incerto. Il club inglese non eserciterà la clausola per il riscatto da 17.5 milioni, la cui..."
+    },
+    {
+      "id": "c4be8d9a52f9",
+      "title": "Mercato Lazio, Lazzari ai saluti? Gli aggiornamenti sul terzino",
+      "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-lazzari-ai-saluti-gli-aggiornamenti-sul-terzino/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-15T08:54:59.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T08:54:59.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-lazzari-ai-saluti-gli-aggiornamenti-sul-terzino/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Il terzino sembra ormai prossimo a lasciare la Lazio in questa sessione estiva di calciomercato dopo sette stagioni nella Capitale: le ultime"
+    },
+    {
+      "id": "c6514dd09351",
+      "title": "Lazio, Zauri racconta un aneddoto con Radu: \"Gli abbiamo cambiato alimentazione\"",
+      "url": "https://www.lalaziosiamonoi.it/news/lazio-zauri-racconta-aneddoto-radu-gli-cambiato-alimentazione-247304",
+      "source": "La Lazio Siamo Noi",
+      "publishedAt": "2026-06-15T08:45:01.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T08:45:01.000Z",
+      "sources": [
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/news/lazio-zauri-racconta-aneddoto-radu-gli-cambiato-alimentazione-247304",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        }
+      ],
+      "summary": "Luciano Zauri, ex terzino della Lazio, è intervenuto durante il podcast 'Doppio Passo' per raccontare alcuni aneddoti delle sue avventure in biancoceleste, tra questi anche il rapporto con Kolarov e Radu, sue alternative quando indossa ..."
+    },
+    {
+      "id": "758a61fc3d83",
+      "title": "Mandas – Bournemouth: oggi scade il diritto di riscatto, il futuro resta un rebus",
+      "url": "https://www.lazionews.eu/notizie/mandas-bournemouth-lazio-calciomercato/",
+      "source": "LazioNews.eu",
+      "publishedAt": "2026-06-15T08:25:00.000Z",
+      "image": null,
+      "coverage": 3,
+      "momentum": 3,
+      "lastAt": "2026-06-15T08:25:00.000Z",
+      "sources": [
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/notizie/mandas-bournemouth-lazio-calciomercato/",
+          "favicon": "/sources/lazionews.eu.png"
+        },
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/calciomercato-lazio-rebus-mandas-titolare-sacrificato-scenari-247318",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        },
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-il-futuro-di-gila-e-un-rebus-la-situazione/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Christos Mandas, ex biancoceleste passato al Bournemouth durante la finestra di riparazione del calciomercato, potrebbe lasciare il club inglese: su di lui un club di Serie A. LEGGI ANCHE: Laziali in prestito: come sta andando la stagione di Renzetti? Calciomercato: Mandas tra…"
+    },
+    {
+      "id": "341a38e1b346",
+      "title": "Arduini: “Lazio, si accettano sconfitte e stagioni sbagliate ma non la rinuncia ai sogni”",
+      "url": "https://www.lazionews.eu/notizie/arduini-lettera-momento-lazio/",
+      "source": "LazioNews.eu",
+      "publishedAt": "2026-06-15T08:17:17.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T08:17:17.000Z",
+      "sources": [
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/notizie/arduini-lettera-momento-lazio/",
+          "favicon": "/sources/lazionews.eu.png"
+        }
+      ],
+      "summary": "Anche lo speaker radiofonico di Rai 2 e noto tifoso della Lazio Roberto Arduini ha affidato alle pagine de Il Tempo una lettera nella quale ha analizzato il difficile momento che sta vivendo il club biancoceleste. Leggi Anche: Cruciani: “Lotito non offre ai tifosi una prospett…"
+    },
+    {
+      "id": "4b99c81e6e77",
+      "title": "Mercato Lazio, occhi puntati su un trequartista croato: ecco quale",
+      "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-occhi-puntati-su-un-trequartista-croato-ecco-quale/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-15T08:15:04.000Z",
+      "image": null,
+      "coverage": 4,
+      "momentum": 4,
+      "lastAt": "2026-06-15T08:15:04.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-occhi-puntati-su-un-trequartista-croato-ecco-quale/",
+          "favicon": "/sources/cittaceleste.it.png"
+        },
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/273580723718/occhi-puntati-su-stojkovic-della-dinamo-zagabria",
+          "favicon": "/sources/laziopress.it.png"
+        },
+        {
+          "name": "Lazialità",
+          "url": "https://www.lazialita.com/2026/06/15/lazio-numero-dieci-cercasi-nel-mirino-stojkovic-della-dinamo-zagabria/",
+          "favicon": "/sources/lazialita.com.png"
+        },
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/notizie/stojkovic-lazio-dinamo-zagabria-calciomercato/",
+          "favicon": "/sources/lazionews.eu.png"
+        }
+      ],
+      "summary": "La Lazio è alla ricerca di un trequartista da consegnare a Gattuso: l'ultimo nome sembrerebbe arrivare dalla Croazia, ecco di chi si tratta"
+    },
+    {
+      "id": "3cbe44e4a8c6",
+      "title": "Lazio, la lettera di Arduini: “L’ambizione è diventata un fastidio, servono soldi non idee”",
+      "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/lazio-lettera-arduini-l-ambizione-diventata-fastidio-servono-soldi-idee-247316",
+      "source": "La Lazio Siamo Noi",
+      "publishedAt": "2026-06-15T08:00:56.000Z",
+      "image": null,
+      "coverage": 2,
+      "momentum": 2,
+      "lastAt": "2026-06-15T08:00:56.000Z",
+      "sources": [
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/lazio-lettera-arduini-l-ambizione-diventata-fastidio-servono-soldi-idee-247316",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        },
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/239220985350/la-lettera-di-roberto-arduini-la-lazio-ha-ingranato-la-retromarcia-e-come-se-l-ambizione-fosse-diventata-un-fastidio",
+          "favicon": "/sources/laziopress.it.png"
+        }
+      ],
+      "summary": "Continua sulle colonne del Tempo l’appuntamento con Agorà Lazio, in cui diversi tifosi biancocelesti di spicco hanno modo di inviare una lettera aperta per parlare del momento del club biancoceleste."
+    },
+    {
+      "id": "5f4cf4bddabe",
+      "title": "Lazio, si ragiona anche sulle uscite: ecco chi sono i tre sacrificabili",
+      "url": "https://www.lazialita.com/2026/06/15/lazio-si-ragiona-anche-sulle-uscite-ecco-chi-sono-i-tre-sacrificabili/",
+      "source": "Lazialità",
+      "publishedAt": "2026-06-15T07:49:00.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T07:49:00.000Z",
+      "sources": [
+        {
+          "name": "Lazialità",
+          "url": "https://www.lazialita.com/2026/06/15/lazio-si-ragiona-anche-sulle-uscite-ecco-chi-sono-i-tre-sacrificabili/",
+          "favicon": "/sources/lazialita.com.png"
+        }
+      ],
+      "summary": "“Un piccolo tesoretto può arrivare dalle cessioni minori come Cancellieri, Lazzari e Pellegrini, tutti in scadenza e considerati fuori dal progetto tecnico di Gattuso”. Così recita l’edizione odierna de “Il Corriere dello Sport” con l’articolo dal titolo “Cancellieri, Pellegri…"
+    },
+    {
+      "id": "9cde958a5925",
+      "title": "Paolo Di Canio: \"Gattuso? Chiunque arrivi alla Lazio deve considerarsi fortunato\"",
+      "url": "https://www.cittaceleste.it/news/paolo-di-canio-gattuso-chiunque-arrivi-alla-lazio-deve-considerarsi-fortunato/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-15T07:43:32.000Z",
+      "image": null,
+      "coverage": 3,
+      "momentum": 2,
+      "lastAt": "2026-06-15T07:43:32.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/news/paolo-di-canio-gattuso-chiunque-arrivi-alla-lazio-deve-considerarsi-fortunato/",
+          "favicon": "/sources/cittaceleste.it.png"
+        },
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/fiore-gattuso-lazio-ex-parole/",
+          "favicon": "/sources/lazionews24.com.png"
+        },
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/376659938822/di-canio-il-nuovo-allenatore-della-lazio-dovra-ricostruire-appartenenza-entusiasmo-e-fiducia",
+          "favicon": "/sources/laziopress.it.png"
+        }
+      ],
+      "summary": "Le parole di Paolo Di Canio rilasciate alla Fip Silver Mediolanum Padel Cup di Palermo: il suo pensiero sull'arrivo di Gattuso alla Lazio"
+    },
+    {
+      "id": "853f40b00856",
+      "title": "Gila, spunta una novità sulla percentuale di rivendita",
+      "url": "https://www.laziopress.it/news/548458630662/gila-spunta-una-novita-sulla-percentuale-di-rivendita",
+      "source": "LazioPress",
+      "publishedAt": "2026-06-15T07:38:00.000Z",
+      "image": null,
+      "coverage": 4,
+      "momentum": 4,
+      "lastAt": "2026-06-15T07:38:00.000Z",
+      "sources": [
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/548458630662/gila-spunta-una-novita-sulla-percentuale-di-rivendita",
+          "favicon": "/sources/laziopress.it.png"
+        },
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/calciomercato/gila-napoli-lazio-calciomercato/",
+          "favicon": "/sources/lazionews.eu.png"
+        },
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/in-evidenza/lazio-novita-gila-cambia-percentuale-rivendita-247313",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        },
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/romagnoli-addio-lazio-ufficialita-dettagli/",
+          "favicon": "/sources/lazionews24.com.png"
+        }
+      ],
+      "summary": "L'ipotetica cessione di Mario Gila ha portato anche una grande novità sulla percentuale di rivendita che il club biancoceleste dovrà riconoscere al Real Madrid. Secondo quanto raccolto da Il..."
+    },
+    {
+      "id": "314078d43371",
+      "title": "Ex Lazio, Kamada decisivo all’esordio: sigla il 2-2 in Olanda-Giappone! I dettagli",
+      "url": "https://www.lazionews24.com/ex-lazio-kamada-gol-esordio-mondiale/",
+      "source": "LazioNews24",
+      "publishedAt": "2026-06-15T07:33:00.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T07:33:00.000Z",
+      "sources": [
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/ex-lazio-kamada-gol-esordio-mondiale/",
+          "favicon": "/sources/lazionews24.com.png"
+        }
+      ],
+      "summary": "Ex Lazio, finisce 2-2 la gara d’esordio al Mondiale tra Olanda-Giappone! Decisivo il gol di Daichi Kamada. Il resoconto della gara La gara d’esordio del Gruppo F dei Mondiali si chiude con un pirotecnico 2-2 tra Olanda e Giappone. Un risultato che per gli “Orange” sa di grande…"
+    },
+    {
+      "id": "aa69a5ddeb0b",
+      "title": "Cancellieri, tanti estimatori ma ancora zero offerte: la situazione",
+      "url": "https://www.lazionews.eu/notizie/cancellieri-calciomercato/",
+      "source": "LazioNews.eu",
+      "publishedAt": "2026-06-15T07:17:59.000Z",
+      "image": null,
+      "coverage": 2,
+      "momentum": 2,
+      "lastAt": "2026-06-15T07:17:59.000Z",
+      "sources": [
+        {
+          "name": "LazioNews.eu",
+          "url": "https://www.lazionews.eu/notizie/cancellieri-calciomercato/",
+          "favicon": "/sources/lazionews.eu.png"
+        },
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/rassegna-stampa/calciomercato-lazio-cancellieri-uscita-solo-situazione-247312",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        }
+      ],
+      "summary": "Matteo Cancellieri, molto probabilmente, verrà sacrificato dalla Lazio per finanziare così il calciomercato in entrata: tra lui e Isaksen, mister Gattuso preferirebbe il danese, con l’esterno romano che si troverebbe chiuso nelle gerarchie. La dirigenza biancoceleste è a lavor…"
+    },
+    {
+      "id": "48e4ce947097",
+      "title": "Le prime pagine dei principali quotidiani sportivi – 15 giugno",
+      "url": "https://www.lazionews24.com/prime-pagine-quotidiani-sportivi-15-giugno-2/",
+      "source": "LazioNews24",
+      "publishedAt": "2026-06-15T07:00:00.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T07:00:00.000Z",
+      "sources": [
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/prime-pagine-quotidiani-sportivi-15-giugno-2/",
+          "favicon": "/sources/lazionews24.com.png"
+        }
+      ],
+      "summary": "Le prime pagine dei quotidiani sportivi di oggi, 15 giugno: Tuttosport, Gazzetta dello Sport e Corriere dello Sport La Gazzetta dello Sport, Il Corriere dello Sport e Tuttosport rappresentano i principali quotidiani sportivi in Italia. Punto di riferimento ogni giorno tanto pe…"
+    },
+    {
+      "id": "171af3c332bd",
+      "title": "Gila in bilico: il Napoli spinge, ma Lotito fa muro",
+      "url": "https://www.laziopress.it/news/342300200454/gila-in-bilico-il-napoli-spinge-ma-lotito-fa-muro",
+      "source": "LazioPress",
+      "publishedAt": "2026-06-15T06:52:00.000Z",
+      "image": null,
+      "coverage": 2,
+      "momentum": 1,
+      "lastAt": "2026-06-15T06:52:00.000Z",
+      "sources": [
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/342300200454/gila-in-bilico-il-napoli-spinge-ma-lotito-fa-muro",
+          "favicon": "/sources/laziopress.it.png"
+        },
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-il-napoli-insiste-per-gila-tre-i-nomi-per-abbassare-le-pretese-della-lazio/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Con la consapevolezza che la Lazio dovrà operare a saldo zero entro la fine del mese, il club dovrà lavorare sul mercato in uscita e dopo quella di Romagnoli, che potrebbe essere ufficiale proprio..."
+    },
+    {
+      "id": "82b8821c0e63",
+      "title": "Mercato Lazio, il club deve lavorare sul capitolo delle uscite: il punto",
+      "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-il-club-deve-lavorare-sul-capitolo-delle-uscite-il-punto/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-15T06:38:21.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T06:38:21.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-il-club-deve-lavorare-sul-capitolo-delle-uscite-il-punto/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Al fine di avere il mercato libero a partire dal 30 giugno, la Lazio sarà chiamata a lavorare sul tema riguardante le cessioni: la situazione"
+    },
+    {
+      "id": "b10b88d5b074",
+      "title": "Calciomercato Lazio | Un numero 10 per Gattuso: l'ultimo nome arriva dalla Croazia",
+      "url": "https://www.lalaziosiamonoi.it/in-evidenza/calciomercato-lazio-numero-10-gattuso-l-ultimo-arriva-croazia-247308",
+      "source": "La Lazio Siamo Noi",
+      "publishedAt": "2026-06-15T06:30:10.000Z",
+      "image": null,
+      "coverage": 2,
+      "momentum": 1,
+      "lastAt": "2026-06-15T06:30:10.000Z",
+      "sources": [
+        {
+          "name": "La Lazio Siamo Noi",
+          "url": "https://www.lalaziosiamonoi.it/in-evidenza/calciomercato-lazio-numero-10-gattuso-l-ultimo-arriva-croazia-247308",
+          "favicon": "/sources/lalaziosiamonoi.it.png"
+        },
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/fabbian-lazio-profilo-tecnico-fiorentina/",
+          "favicon": "/sources/lazionews24.com.png"
+        }
+      ],
+      "summary": "RASSEGNA STAMPA - Da giorni rimbalzano nomi di numeri 10 perché Gattuso, per la Lazio dei suoi sogni, ha intenzione di optare per un 4-2-3-1 insieme al 4-3-3. Se ne aggiunge un altro alla lista: Luka Stojkovic della Dinamo Zagabria."
+    },
+    {
+      "id": "e96ae872b69d",
+      "title": "Lazio News / Romagnoli vicino all'Al-Sadd, Cancellieri ai saluti: rassegna stampa",
+      "url": "https://www.cittaceleste.it/news/rassegna-stampa-news/lazio-news-romagnoli-vicino-allal-sadd-cancellieri-ai-saluti-rassegna-stampa/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-15T05:45:23.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-15T05:45:23.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/news/rassegna-stampa-news/lazio-news-romagnoli-vicino-allal-sadd-cancellieri-ai-saluti-rassegna-stampa/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Le principali notizie della mattinata di oggi lunedì 15 giugno 2026 riguardanti l'ambiente Lazio, tutte a portata di mano su Cittaceleste.it"
+    },
+    {
+      "id": "1e85d54a24ff",
+      "title": "Risultati e classifica Mondiali 2026 LIVE: vince Germania, solo un pari per l’Olanda. Tutti gli aggiornamenti",
+      "url": "https://www.lazionews24.com/risultati-classifica-mondiali-2026-live/",
+      "source": "LazioNews24",
+      "publishedAt": "2026-06-14T22:00:00.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T22:00:00.000Z",
+      "sources": [
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/risultati-classifica-mondiali-2026-live/",
+          "favicon": "/sources/lazionews24.com.png"
+        }
+      ],
+      "summary": "Risultati e classifica Mondiali 2026: vi riportiamo tutti gli aggiornamenti in diretta su fase a gironi, ottavi, quarti, semifinali e finale I risultati e la classifica dei Mondiali 2026! Vi aggiorniamo giorno per giorno dalla fase a gironi ad ottavi, quarti, semifinali e fina…"
+    },
+    {
+      "id": "e9ed7c9cb946",
+      "title": "Calciomercato Lazio LIVE: tutte le novità su Rovella, Asp e Lazzari",
+      "url": "https://www.lazionews24.com/ultimissime-calciomercato-lazio-trattative/",
+      "source": "LazioNews24",
+      "publishedAt": "2026-06-14T20:00:00.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T20:00:00.000Z",
+      "sources": [
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/ultimissime-calciomercato-lazio-trattative/",
+          "favicon": "/sources/lazionews24.com.png"
+        }
+      ],
+      "summary": "Ultimissime calciomercato Lazio LIVE: qui di seguito tutte le ultimissime trattative e gli aggiornamenti in tempo reale sui principali affari relativi ai biancocelesti Il calciomercato Lazio non si ferma mai. La dirigenza biancoceleste è al lavoro per individuare i profili giu…"
+    },
+    {
+      "id": "732759bb2d47",
+      "title": "Gila vuole lasciare la Lazio quest’estate! Pronto un nuovo incontro con il d.s. Fabiani",
+      "url": "https://www.lazionews24.com/gila-addio-lazio-nuovo-incontro/",
+      "source": "LazioNews24",
+      "publishedAt": "2026-06-14T19:50:00.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T19:50:00.000Z",
+      "sources": [
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/gila-addio-lazio-nuovo-incontro/",
+          "favicon": "/sources/lazionews24.com.png"
+        }
+      ],
+      "summary": "Mario Gila, difensore della Lazio, è pronto a lasciare la Capitale e a breve ribadirà la sua volontà alla società di Claudio Lotito nei prossimi giorni Il futuro di Mario Gila torna al centro delle valutazioni in casa Lazio. Secondo quanto segnalato da Alfredo Pedullà via soci…"
+    },
+    {
+      "id": "4bac6d341c99",
+      "title": "Formello Lazio: tutti gli aggiornamenti sugli uomini di Sarri",
+      "url": "https://www.lazionews24.com/formello-lazio-infortunati-diffidati-ultime/",
+      "source": "LazioNews24",
+      "publishedAt": "2026-06-14T16:00:00.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T16:00:00.000Z",
+      "sources": [
+        {
+          "name": "LazioNews24",
+          "url": "https://www.lazionews24.com/formello-lazio-infortunati-diffidati-ultime/",
+          "favicon": "/sources/lazionews24.com.png"
+        }
+      ],
+      "summary": "Formello Lazio: le ultime notizie di formazione in vista del prossimo impegno, gli infortunati, i tempi di recupero, i diffidati e le news Tutti gli aggiornamenti in casa Lazio su infortunati e tempi di recupero, probabili formazioni in vista dei prossimi impegni, diffidati e …"
+    },
+    {
+      "id": "6f902c575748",
+      "title": "Ex Lazio | Petkovic e Scaloni a Formello: la cena prima dei Mondiali",
+      "url": "https://www.cittaceleste.it/news/ex-lazio-petkovic-e-scaloni-a-formello-la-cena-prima-dei-mondiali/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-14T14:00:22.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T14:00:22.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/news/ex-lazio-petkovic-e-scaloni-a-formello-la-cena-prima-dei-mondiali/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "I due ex Lazio si sono ritrovati vicino al centro sportivo di Formello a cena: sono ai Mondiali da commissari tecnici di Algeria e Argentina"
+    },
+    {
+      "id": "cbadd79ac542",
+      "title": "Mercato | Cancellieri per finanziare il mercato della Lazio: quattro club su di lui",
+      "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-cancellieri-pronto-a-lasciare-possibile-asta-la-lazio-gongola/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-14T13:15:43.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T13:15:43.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-cancellieri-pronto-a-lasciare-possibile-asta-la-lazio-gongola/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Per l'esterno classe 2002 di proprietà della Lazio ci sono già quattro club interessati: i biancocelesti gongolano, possibile asta in vista?"
+    },
+    {
+      "id": "b2929a4a6bd8",
+      "title": "La lettera di Alessandro Zappulla: \"La sensazione è che la Lazio stia soffocando\"",
+      "url": "https://www.laziopress.it/news/170501508614/la-lettera-di-alessandro-zappulla-la-sensazione-e-che-la-lazio-stia-soffocando",
+      "source": "LazioPress",
+      "publishedAt": "2026-06-14T12:21:00.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T12:21:00.000Z",
+      "sources": [
+        {
+          "name": "LazioPress",
+          "url": "https://www.laziopress.it/news/170501508614/la-lettera-di-alessandro-zappulla-la-sensazione-e-che-la-lazio-stia-soffocando",
+          "favicon": "/sources/laziopress.it.png"
+        }
+      ],
+      "summary": "Di seguito la lettera di Alessandro Zappulla pubblicata questa mattina sulle colonne de Il Tempo.La lettera di Alessandro ZappullaCaro Presidente, non sono qui a scriverle per paura. I laziali,..."
+    },
+    {
+      "id": "8cdb63cee02e",
+      "title": "Mercato | Muriqi torna al Fenerbahce. Ma l'incasso per la Lazio...",
+      "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-muriqi-torna-al-fenerbahce-e-lotito-incassa-le-cifre/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-14T11:59:48.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T11:59:48.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-muriqi-torna-al-fenerbahce-e-lotito-incassa-le-cifre/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "L'ex attaccante biancoceleste è pronto a tornare in Turchia: a un passo il ritorno al Fenerbahce per circa 15 milioni di euro. Lotito incassa"
+    },
+    {
+      "id": "606278332485",
+      "title": "Mercato Lazio | Provedel può insidiare Martinez: sarà titolare all'Inter?",
+      "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-provedel-puo-insidiare-martinez-sara-titolare-allinter/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-14T11:00:17.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T11:00:17.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/calciomercato/lazio/mercato-lazio-provedel-puo-insidiare-martinez-sara-titolare-allinter/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Il portiere classe 1994 di proprietà della Lazio ha già dato il suo ok per trasferirsi a Milano, sponda nerazzurra: può insidiare Martinez"
+    },
+    {
+      "id": "b42c13b24d1b",
+      "title": "Lazio, Manzini racconta \"Gascoigne, Signori e Boksic. E quel viaggio a Sion...\"",
+      "url": "https://www.cittaceleste.it/news/lazio-manzini-racconta-gascoigne-signori-e-boksic-e-quel-viaggio-a-sion/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-14T10:31:49.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T10:31:49.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/news/lazio-manzini-racconta-gascoigne-signori-e-boksic-e-quel-viaggio-a-sion/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Le dichiarazioni rilasciate da Maurizio Manzini, Team Manager della Lazio, nel secondo episodio del documentario \"In My Life\" a lui dedicato"
+    },
+    {
+      "id": "38fd64a088ee",
+      "title": "Lazio, pronto il ritiro a Formello: le date di visite mediche e inizio",
+      "url": "https://www.cittaceleste.it/news/lazio-pronto-il-ritiro-a-formello-le-date-di-visite-mediche-e-inizio/",
+      "source": "Cittaceleste",
+      "publishedAt": "2026-06-14T09:59:56.000Z",
+      "image": null,
+      "coverage": 1,
+      "momentum": 1,
+      "lastAt": "2026-06-14T09:59:56.000Z",
+      "sources": [
+        {
+          "name": "Cittaceleste",
+          "url": "https://www.cittaceleste.it/news/lazio-pronto-il-ritiro-a-formello-le-date-di-visite-mediche-e-inizio/",
+          "favicon": "/sources/cittaceleste.it.png"
+        }
+      ],
+      "summary": "Lo staff della Lazio si prepara per il secondo ritiro consecutivo a Formello, nel clima torrido di Roma. Ecco le date"
+    }
+  ]
+}

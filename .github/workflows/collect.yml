@@ -1,0 +1,23 @@
+# Scheduler della raccolta: chiama /api/collect a intervalli regolari, così la
+# finestra delle ultime 24 ore resta sempre fresca.
+#
+# Richiede due "Repository secrets" (Settings → Secrets and variables → Actions):
+#   SITE_URL        es. https://lazio24.news  (senza slash finale)
+#   COLLECT_SECRET  lo stesso valore impostato su Railway
+name: collect
+
+on:
+  schedule:
+    - cron: "*/20 * * * *" # ogni 20 minuti
+  workflow_dispatch: {} # consente l'avvio manuale dalla tab Actions
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger raccolta
+        run: |
+          curl -fsS --max-time 180 \
+            "${{ secrets.SITE_URL }}/api/collect?token=${{ secrets.COLLECT_SECRET }}" \
+            && echo "Raccolta OK" \
+            || (echo "Raccolta fallita" && exit 1)

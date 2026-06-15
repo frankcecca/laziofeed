@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 48" width="248" height="48" role="img" aria-label="Lazio24.news">
+  <rect x="4" y="4" width="40" height="40" rx="9" fill="#0a4da2"/>
+  <text x="24" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="17" fill="#ffffff">L24</text>
+  <text x="56" y="33" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="26" letter-spacing="-0.5" fill="#0a4da2">Lazio<tspan fill="#2f7ec4">24</tspan><tspan fill="#64748b">.news</tspan></text>
+</svg>
