@@ -3,8 +3,8 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { SITE_NAME } from "../../../lib/site";
 
-// Ri-genera dai dati raccolti, in linea con la ISR del feed.
-export const revalidate = 600;
+// Sempre dinamica: legge i dati raccolti sul volume a ogni richiesta.
+export const dynamic = "force-dynamic";
 
 async function getStory(id) {
   try {

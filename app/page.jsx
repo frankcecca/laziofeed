@@ -7,8 +7,9 @@ import ShareButton from "../components/ShareButton";
 import TrendBadge from "../components/TrendBadge";
 import { SITE_URL, SITE_NAME } from "../lib/site";
 
-// Rigenera la pagina periodicamente (ISR).
-export const revalidate = 600; // 10 minuti
+// Sempre dinamica: legge i dati raccolti sul volume a ogni richiesta, così
+// riflette subito l'ultima raccolta (niente pre-render statico dal seme).
+export const dynamic = "force-dynamic";
 
 async function getData() {
   try {

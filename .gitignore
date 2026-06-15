@@ -16,3 +16,5 @@ public/sources/*
 data/sources/
 # Cache delle sintesi AI (vive sul volume persistente)
 data/summaries.json
+# Dati raccolti (vivono sul volume persistente, non vanno committati come "seme")
+data/articles.json
