@@ -64,9 +64,9 @@ passi di deploy (il *come*, con comandi) e la verifica finale.
 
 ## Fase 2 — Build locale
 
-- [ ] Build di produzione pulita: `npm run build` (niente cache HMR di sviluppo).
-- [ ] Disclaimer "non ufficiale" + disclaimer sintesi AI presenti e visibili.
-- [ ] Pagine legali aggiornate (incluso l'analytics).
+- [x] Build di produzione pulita: `npm run build`.
+- [x] Disclaimer "non ufficiale" + disclaimer sintesi AI presenti e visibili.
+- [x] Pagine legali aggiornate (incluso l'analytics).
 
 ---
 
@@ -80,8 +80,8 @@ git remote add origin https://github.com/<tuo-utente>/laziofeed.git
 git push -u origin main
 ```
 
-- [ ] Repo pushato su GitHub.
-- [ ] Verificato che `.env`, `node_modules`, `.next`, `public/images` siano in `.gitignore` (le immagini si rigenerano sul server).
+- [x] Repo pushato su GitHub (frankcecca/laziofeed, pubblico).
+- [x] Verificato `.gitignore`: `.env`, `node_modules`, `.next`, e i dati runtime (`data/articles.json`, `data/summaries.json`, `data/sources/`) non tracciati.
 
 ---
 
@@ -91,12 +91,12 @@ git push -u origin main
 2. Se richiesto: Build `npm install && npm run build`, Start `npm start`.
 3. Settings → **Variables**:
 
-- [ ] `NEXT_PUBLIC_SITE_URL` = `https://lazio24.news`
-- [ ] `COLLECT_SECRET` = stringa casuale (`openssl rand -hex 24`)
-- [ ] `ANTHROPIC_API_KEY` = la tua chiave (mai nel repo)
-- [ ] `NEXT_PUBLIC_SUPPORT_URL` = `https://www.paypal.me/frankcecca`
-- [ ] (Umami: due variabili in Fase 6)
-- [ ] Dominio `lazio24.news` collegato, DNS configurato, **HTTPS attivo** (serve per PWA e tasto Condividi).
+- [x] `NEXT_PUBLIC_SITE_URL` = `https://lazio24.news`
+- [x] `COLLECT_SECRET` = stringa casuale (`openssl rand -hex 24`)
+- [x] `GROQ_API_KEY` = chiave Groq (sintesi AI open-source, gratis). `ANTHROPIC_API_KEY` non usata.
+- [x] `NEXT_PUBLIC_SUPPORT_URL` = `https://www.paypal.me/frankcecca`
+- [ ] (Umami: due variabili in Fase 6 — ancora da fare)
+- [x] Dominio `lazio24.news` collegato (registrato su Cloudflare, CNAME+TXT, DNS only), **HTTPS attivo**.
 
 ---
 
@@ -104,7 +104,7 @@ git push -u origin main
 
 In Railway: servizio → **Settings → Volumes → New Volume**.
 
-- [ ] Volume montato (es. `/app/data`) così dati e immagini sopravvivono ai redeploy.
+- [x] Volume montato su `/app/data` (dati, cache sintesi e favicon persistono ai redeploy).
 
 > Senza volume, dati e immagini ripartono "vuoti" a ogni redeploy finché non gira la raccolta successiva.
 
@@ -129,20 +129,18 @@ In Railway: servizio → **Settings → Volumes → New Volume**.
 URL da chiamare: `https://<dominio>/api/collect?token=IL_TUO_COLLECT_SECRET`
 Frequenza consigliata: **ogni 15–30 minuti** (le notizie coprono le ultime 24h).
 
-- [ ] Scheduler attivo, con una di queste opzioni:
-  - **cron-job.org** (gratis): nuovo cronjob → incolla l'URL → intervallo 20 min.
-  - **GitHub Actions** (`*/20 * * * *`) con `curl` all'URL e `COLLECT_SECRET` tra i Secrets.
-  - **Railway Cron**: servizio che esegue `curl "$URL/api/collect?token=$COLLECT_SECRET"`.
-- [ ] Budget/quota API Anthropic monitorati (limite di spesa impostato).
+- [x] Scheduler attivo su **cron-job.org**, ogni **20 minuti**, con notifica email sui fallimenti. Test "Run now" → HTTP 200.
+- [x] Workflow GitHub Actions **disattivato** (resta come riserva).
+- [x] Costi AI sotto controllo: Groq free + **cache delle sintesi** (1 chiamata per notizia) → poche chiamate/giorno, dentro il free tier.
 
 ---
 
 ## Fase 8 — Prima esecuzione e verifica
 
-- [ ] Aperto `/api/collect?token=…` → risponde `{"ok":true,"count":…}`.
-- [ ] La home mostra notizie, immagini e tema del momento.
-- [ ] Pulizia immagini a 24h verificata.
-- [ ] Se una fonte fallisce, il sito resta su (no crash).
+- [x] `/api/collect?token=…` → `{"ok":true,"count":…}`.
+- [x] La home mostra notizie, tema del momento e sintesi AI (Groq) pulite.
+- [x] Favicon delle fonti servite dal volume (route `/sources/[file]`).
+- [x] Storie con titolo duplicato fuse (no card gemelle).
 
 ---
 
@@ -172,5 +170,14 @@ Frequenza consigliata: **ogni 15–30 minuti** (le notizie coprono le ultime 24h
 
 - Finestra notizie: `EDITION_WINDOW_HOURS` in `lib/collect.js` (24h). Sotto le 5 storie → "giornata tranquilla" (`QUIET_THRESHOLD`).
 - Finestra "tema del momento": `TREND_WINDOW_MS` in `lib/collect.js` (12h).
-- Home con ISR: `revalidate` 600s in `app/page.jsx` (abbassalo per aggiornamenti più rapidi).
+- Home e pagina-notizia: **dinamiche** (`force-dynamic`) → leggono i dati dal volume a ogni richiesta.
+- Sintesi AI: provider via env (`GROQ_API_KEY` → Groq); **cache** in `data/summaries.json`; `CACHE_VERSION` in `lib/collect.js` invalida la cache se cambia.
+- Sicurezza: Next.js aggiornato a 14.2.35 (CVE).
 - In locale: `npm run collect` + `npm run dev`.
+
+## Da completare
+
+- [ ] **Alias email** Cloudflare (`legal@` / `info@`) → poi aggiornare le pagine legali (togliere la mail personale).
+- [ ] **Umami** (Fase 6): PostgreSQL + template, due variabili `NEXT_PUBLIC_UMAMI_*`.
+- [ ] **QA a sito live** (Fase 9): nessun cookie, OG sui debugger social, Lighthouse, test su iPhone/Android.
+- [ ] Far rivedere le pagine legali da un professionista.

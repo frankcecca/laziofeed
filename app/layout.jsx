@@ -3,6 +3,7 @@ import Link from "next/link";
 import SupportButton from "../components/SupportButton";
 import PWARegister from "../components/PWARegister";
 import Analytics from "../components/Analytics";
+import InstallPrompt from "../components/InstallPrompt";
 import { SITE_URL, SITE_NAME } from "../lib/site";
 
 export const viewport = {
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen text-slate-800 antialiased">
         <PWARegister />
         <Analytics />
+        <InstallPrompt />
         {/* Header a tutta larghezza; contenuto e footer incolonnati al centro */}
         <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
           <div className="mx-auto flex max-w-[640px] items-center justify-between px-4 py-3">
