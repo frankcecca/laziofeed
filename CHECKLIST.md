@@ -110,17 +110,14 @@ In Railway: servizio → **Settings → Volumes → New Volume**.
 
 ---
 
-## Fase 6 — Analytics Umami (cookieless, anonimo)
+## Fase 6 — Analytics Umami (cookieless, anonimo) ✅
 
-1. Railway: **Add PostgreSQL**, poi **New → Template → Umami** (collega il DB e avvia).
-2. Accedi a Umami (default `admin` / `umami`) → **cambia subito la password**.
-3. Crea il sito `lazio24.news` → ottieni **script URL** (`https://<istanza>/script.js`) e **Website ID**.
-4. Nelle Variables del sito:
+Installato via template Railway (Umami + Postgres dedicato + Valkey).
 
-- [ ] `NEXT_PUBLIC_UMAMI_SRC` = `https://<tua-istanza-umami>/script.js`
-- [ ] `NEXT_PUBLIC_UMAMI_WEBSITE_ID` = l'ID generato
-- [ ] **Redeploy** del sito (le `NEXT_PUBLIC_` entrano al build; lo script si carica solo se entrambe presenti).
-- [ ] Istanza ospitata in UE e IP in forma anonima.
+- [x] `NEXT_PUBLIC_UMAMI_SRC` e `NEXT_PUBLIC_UMAMI_WEBSITE_ID` impostate + redeploy.
+- [x] Sito `lazio24.news` creato in Umami; password admin cambiata.
+- [x] Tracciamento verificato: le visite arrivano nella dashboard.
+- [x] Vecchio Postgres standalone ridondante eliminato.
 
 ---
 
@@ -175,9 +172,13 @@ Frequenza consigliata: **ogni 15–30 minuti** (le notizie coprono le ultime 24h
 - Sicurezza: Next.js aggiornato a 14.2.35 (CVE).
 - In locale: `npm run collect` + `npm run dev`.
 
+## Fatto in fase di lancio
+
+- [x] **Alias email** Cloudflare (`legal@` / `info@`) attivi → pagine legali aggiornate (niente mail personale).
+- [x] **Umami** installato e verificato (cookieless, anonimo).
+- [x] Sicurezza: Next.js 14.2.35; sintesi via Groq (open) + cache; favicon dal volume; home dinamica; fusione duplicati.
+
 ## Da completare
 
-- [ ] **Alias email** Cloudflare (`legal@` / `info@`) → poi aggiornare le pagine legali (togliere la mail personale).
-- [ ] **Umami** (Fase 6): PostgreSQL + template, due variabili `NEXT_PUBLIC_UMAMI_*`.
-- [ ] **QA a sito live** (Fase 9): nessun cookie, OG sui debugger social, Lighthouse, test su iPhone/Android.
-- [ ] Far rivedere le pagine legali da un professionista.
+- [ ] **QA a sito live** (Fase 9): nessun cookie (DevTools), anteprime OG sui debugger social, PWA/Condividi su iPhone+Android, Lighthouse.
+- [ ] Far **rivedere le pagine legali da un professionista** prima di promuovere il sito.
