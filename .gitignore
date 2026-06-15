@@ -14,3 +14,5 @@ public/sources/*
 
 # Favicon delle fonti generate a runtime (vivono sul volume persistente data/)
 data/sources/
+# Cache delle sintesi AI (vive sul volume persistente)
+data/summaries.json
