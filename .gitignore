@@ -11,3 +11,6 @@ public/images/*
 !public/images/.gitkeep
 public/sources/*
 !public/sources/.gitkeep
+
+# Favicon delle fonti generate a runtime (vivono sul volume persistente data/)
+data/sources/
