@@ -44,9 +44,7 @@ export default function NoteLegali() {
       <p>
         Se sei titolare di diritti e ritieni che un contenuto debba essere
         modificato o rimosso, scrivi a{" "}
-        <a href="mailto:francescoceccarelli@mac.com">
-          francescoceccarelli@mac.com
-        </a>
+        <a href="mailto:legal@lazio24.news">legal@lazio24.news</a>
         : provvederemo con tempestività.
       </p>
       <p>

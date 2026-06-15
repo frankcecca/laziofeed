@@ -18,9 +18,7 @@ export default function Privacy() {
       <p>
         Il titolare del trattamento è Francesco Ceccarelli. Per qualsiasi
         richiesta relativa ai tuoi dati puoi scrivere a{" "}
-        <a href="mailto:francescoceccarelli@mac.com">
-          francescoceccarelli@mac.com
-        </a>
+        <a href="mailto:legal@lazio24.news">legal@lazio24.news</a>
         .
       </p>
 
@@ -103,9 +101,7 @@ export default function Privacy() {
         Hai diritto di accedere ai tuoi dati e di chiederne la rettifica, la
         cancellazione, la limitazione o l’opposizione al trattamento, oltre alla
         portabilità ove applicabile. Puoi esercitare questi diritti scrivendo a{" "}
-        <a href="mailto:francescoceccarelli@mac.com">
-          francescoceccarelli@mac.com
-        </a>
+        <a href="mailto:legal@lazio24.news">legal@lazio24.news</a>
         . Hai inoltre il diritto di proporre reclamo all’Autorità Garante per la
         protezione dei dati personali (
         <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer">
