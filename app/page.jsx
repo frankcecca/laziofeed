@@ -5,6 +5,7 @@ import NewsTicker from "../components/NewsTicker";
 import IntroCard from "../components/IntroCard";
 import ShareButton from "../components/ShareButton";
 import TrendBadge from "../components/TrendBadge";
+import LastUpdated from "../components/LastUpdated";
 import { SITE_URL, SITE_NAME } from "../lib/site";
 
 // Sempre dinamica: legge i dati raccolti sul volume a ogni richiesta, così
@@ -56,6 +57,15 @@ function timeAgoShort(iso) {
   return `${Math.round(diff / 86400)}g`;
 }
 
+// Etichetta dell'ultimo aggiornamento: se il valore arrotondato è 0 (aggiornato
+// da meno di mezzo minuto) mostra "Appena aggiornato" invece di "Aggiornato 0 min fa".
+function updateLabel(iso) {
+  if (!iso) return "";
+  const diff = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (Math.round(diff / 60) === 0) return "Appena aggiornato";
+  return `Aggiornato ${timeAgo(iso)} fa`;
+}
+
 // Placeholder azzurro quando la notizia non ha immagine.
 // Spiegazione del punteggio Trend, ricorrente in tutte le modali di sezione.
 function TrendExplainer() {
@@ -69,7 +79,7 @@ function TrendExplainer() {
   );
 }
 
-function Meta({ source, publishedAt, badge, coverage }) {
+function Meta({ source, publishedAt, badge, coverage, onDark }) {
   const text = [source, publishedAt ? timeAgo(publishedAt) : null]
     .filter(Boolean)
     .join(" · ");
@@ -78,13 +88,29 @@ function Meta({ source, publishedAt, badge, coverage }) {
   return (
     <div className="mb-1.5 flex items-center gap-2">
       {badge && (
-        <span className="rounded bg-sky-100 px-2 py-0.5 text-xs font-medium text-lazio-blue">
+        <span
+          className={
+            "rounded px-2 py-0.5 text-xs font-medium " +
+            (onDark ? "bg-white/20 text-white" : "bg-sky-100 text-lazio-blue")
+          }
+        >
           {badge}
         </span>
       )}
-      {text && <span className="text-xs text-slate-500">{text}</span>}
+      {text && (
+        <span className={"text-xs " + (onDark ? "text-sky-100" : "text-slate-500")}>
+          {text}
+        </span>
+      )}
       {coverage > 1 && (
-        <span className="rounded-full border border-slate-200 px-2 py-0.5 text-xs font-medium text-slate-500">
+        <span
+          className={
+            "rounded-full border px-2 py-0.5 text-xs font-medium " +
+            (onDark
+              ? "border-white/40 text-white"
+              : "border-slate-200 text-slate-500")
+          }
+        >
           {coverage} fonti
         </span>
       )}
@@ -122,10 +148,16 @@ function sourceInitials(name = "") {
 
 // Chips per scegliere quale fonte aprire (notizie con più coperture):
 // avatar circolari con la favicon (auto-ospitata) della testata.
-function SourceChips({ sources }) {
+function SourceChips({ sources, onDark }) {
   return (
     <div className="mt-3 flex items-center gap-2">
-      <span className="flex-shrink-0 text-xs text-slate-500">Leggi su</span>
+      <span
+        className={
+          "flex-shrink-0 text-xs " + (onDark ? "text-sky-100" : "text-slate-500")
+        }
+      >
+        Leggi su
+      </span>
       <div className="no-scrollbar flex gap-1.5 overflow-x-auto">
         {sources.map((s) => (
           <a
@@ -135,7 +167,10 @@ function SourceChips({ sources }) {
             rel="noopener noreferrer"
             title={s.name}
             aria-label={`Apri su ${s.name}`}
-            className="flex h-8 w-8 flex-shrink-0 items-center justify-center overflow-hidden rounded-full bg-sky-100 transition active:scale-95"
+            className={
+              "flex h-8 w-8 flex-shrink-0 items-center justify-center overflow-hidden rounded-full transition active:scale-95 " +
+              (onDark ? "bg-white/20" : "bg-sky-100")
+            }
           >
             {s.favicon ? (
               <img
@@ -147,7 +182,11 @@ function SourceChips({ sources }) {
                 loading="lazy"
               />
             ) : (
-              <span className="text-xs font-medium text-lazio-blue">
+              <span
+                className={
+                  "text-xs font-medium " + (onDark ? "text-white" : "text-lazio-blue")
+                }
+              >
                 {sourceInitials(s.name)}
               </span>
             )}
@@ -307,7 +346,7 @@ export default async function Home() {
   };
 
   return (
-    <div className="space-y-3">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -316,6 +355,14 @@ export default async function Home() {
       <h1 className="sr-only">
         Lazio24 — tutte le notizie sulla S.S. Lazio delle ultime 24 ore
       </h1>
+
+      {/* Elementi non visibili (script/h1) tenuti fuori dal flusso "space-y" per
+          non lasciare un margine fantasma sul primo elemento visibile: così la
+          distanza dall'header resta costante anche quando la scritta sparisce.
+          Il -mt-1 compensa il padding del <main> per centrare a ~12px. */}
+      <div className="-mt-1 space-y-3">
+        {/* Ultimo aggiornamento (la pagina è dinamica: ricalcolato a ogni visita) */}
+        {updatedAt && <LastUpdated label={updateLabel(updatedAt)} />}
 
       {/* Manifesto: mostrato solo alla prima visita */}
       <IntroCard />
@@ -346,10 +393,7 @@ export default async function Home() {
         </section>
       )}
 
-      <SectionHeader
-        title="Il tema più importante"
-        aside={updatedAt ? `aggiornato ${timeAgo(updatedAt)} fa` : null}
-      >
+      <SectionHeader title="Il tema più importante">
         <p>
           La notizia più calda del momento, scelta in base al punteggio Trend:
           quante testate la riprendono in poco tempo, con priorità alle più
@@ -385,7 +429,7 @@ export default async function Home() {
         );
 
         return (
-          <section className="overflow-hidden rounded-xl border-2 border-sky-200 bg-white">
+          <section className="overflow-hidden rounded-2xl bg-[#eef4fb] shadow-[6px_6px_14px_#c8d6ea,-6px_-6px_14px_#ffffff]">
             {heroMulti ? (
               heroBody
             ) : (
@@ -461,6 +505,7 @@ export default async function Home() {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

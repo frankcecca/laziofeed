@@ -6,7 +6,7 @@ import { useState } from "react";
 // social…) quando disponibile, altrimenti copia il link negli appunti.
 // Condivide sempre l'URL della notizia su Lazio24 (/n/<id>), così l'anteprima
 // e il marchio restano nostri.
-export default function ShareButton({ id, title }) {
+export default function ShareButton({ id, title, onDark }) {
   const [copied, setCopied] = useState(false);
 
   const onClick = async (e) => {
@@ -32,7 +32,12 @@ export default function ShareButton({ id, title }) {
       type="button"
       onClick={onClick}
       aria-label={`Condividi: ${title}`}
-      className="inline-flex items-center gap-1 rounded-full border border-slate-200 px-2.5 py-1 text-xs font-medium text-slate-500 transition hover:border-sky-300 hover:text-lazio-blue active:scale-95"
+      className={
+        "inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium transition active:scale-95 " +
+        (onDark
+          ? "border-white/40 text-white hover:border-white hover:bg-white/10"
+          : "border-slate-200 text-slate-500 hover:border-sky-300 hover:text-lazio-blue")
+      }
     >
       <svg
         width="13"

@@ -7,6 +7,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { collect } from "../lib/collect.js";
 
+// In locale carica le variabili dal .env (su Railway il file non esiste e si
+// usano le env reali dell'ambiente: l'eventuale errore viene ignorato).
+try {
+  process.loadEnvFile();
+} catch {}
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(__dirname, "..", "data", "articles.json");
 

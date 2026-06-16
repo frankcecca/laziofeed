@@ -80,16 +80,24 @@ export default function PullToRefresh() {
           width="20"
           height="20"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
           className={refreshing ? "animate-spin text-lazio-blue" : "text-lazio-blue"}
           style={refreshing ? undefined : { transform: `rotate(${dist * 3}deg)` }}
+          aria-hidden="true"
         >
-          <path d="M21 12a9 9 0 1 1-2.64-6.36" />
-          <path d="M21 3v6h-6" />
+          <g stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="1" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.92" transform="rotate(30 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.83" transform="rotate(60 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.75" transform="rotate(90 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.66" transform="rotate(120 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.58" transform="rotate(150 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.5" transform="rotate(180 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.42" transform="rotate(210 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.33" transform="rotate(240 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.25" transform="rotate(270 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.16" transform="rotate(300 12 12)" />
+            <line x1="12" y1="2.5" x2="12" y2="6.5" opacity="0.08" transform="rotate(330 12 12)" />
+          </g>
         </svg>
       </div>
     </div>
