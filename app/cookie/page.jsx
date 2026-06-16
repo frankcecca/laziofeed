@@ -2,6 +2,9 @@ import LegalPage from "../../components/LegalPage";
 
 export const metadata = {
   title: "Cookie Policy — Lazio24",
+  description:
+    "Quali cookie utilizza Lazio24 e come gestirli. Il sito usa solo strumenti tecnici e statistiche anonime senza cookie di profilazione.",
+  alternates: { canonical: "/cookie" },
 };
 
 export default function Cookie() {

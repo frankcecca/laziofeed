@@ -94,7 +94,7 @@ export default async function StoryShare({ params }) {
               <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                 {story.summary}
               </p>
-              <p className="mt-1.5 text-xs italic text-slate-400">
+              <p className="mt-1.5 text-xs italic text-slate-500 dark:text-slate-400">
                 Sintesi automatica: possibili imprecisioni, fa fede la fonte.
               </p>
             </>

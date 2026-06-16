@@ -19,6 +19,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Focus visibile solo per navigazione da tastiera (non al click del mouse),
+   coerente in chiaro e scuro. Migliora l'accessibilità senza disturbare. */
+:focus-visible {
+  outline: 2px solid #0a4da2;
+  outline-offset: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  :focus-visible {
+    outline-color: #38bdf8;
+  }
+}
+
 body {
   background: var(--bg);
 }

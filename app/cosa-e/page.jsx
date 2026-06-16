@@ -5,6 +5,7 @@ export const metadata = {
   title: "Cos’è Lazio24",
   description:
     "La filosofia di Lazio24: solo le ultime 24 ore, niente archivio, un hub di aggregazione (non una testata), per passione e senza scopo di lucro.",
+  alternates: { canonical: "/cosa-e" },
 };
 
 export default function CosaE() {

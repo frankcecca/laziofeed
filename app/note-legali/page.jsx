@@ -2,6 +2,9 @@ import LegalPage from "../../components/LegalPage";
 
 export const metadata = {
   title: "Note legali — Lazio24",
+  description:
+    "Natura del servizio, diritto d'autore e contatti: Lazio24 è un aggregatore indipendente, non una testata, e rimanda sempre alla fonte originale.",
+  alternates: { canonical: "/note-legali" },
 };
 
 export default function NoteLegali() {

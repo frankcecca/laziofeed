@@ -2,6 +2,9 @@ import LegalPage from "../../components/LegalPage";
 
 export const metadata = {
   title: "Privacy Policy — Lazio24",
+  description:
+    "Come Lazio24 tratta i dati personali degli utenti, ai sensi del GDPR e della normativa italiana applicabile.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function Privacy() {

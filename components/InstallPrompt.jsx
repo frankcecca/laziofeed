@@ -124,7 +124,7 @@ export default function InstallPrompt() {
           type="button"
           onClick={dismiss}
           aria-label="Chiudi"
-          className="flex-shrink-0 text-slate-400 transition hover:text-slate-600 dark:hover:text-slate-300"
+          className="flex-shrink-0 text-slate-500 dark:text-slate-400 transition hover:text-slate-600 dark:hover:text-slate-300"
         >
           <svg
             width="18"
