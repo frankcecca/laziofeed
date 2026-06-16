@@ -27,9 +27,9 @@ export default function IntroCard() {
   };
 
   return (
-    <section className="rounded-xl border border-sky-200 bg-sky-50 p-4">
-      <h2 className="text-sm font-semibold text-slate-900">Cos’è Lazio24</h2>
-      <div className="mt-2 space-y-2 text-xs leading-relaxed text-slate-600 [&_strong]:font-medium [&_strong]:text-slate-800">
+    <section className="rounded-xl border border-sky-200 dark:border-sky-500/30 bg-sky-50 dark:bg-sky-500/10 p-4">
+      <h2 className="text-sm font-semibold text-slate-900 dark:text-slate-100">Cos’è Lazio24</h2>
+      <div className="mt-2 space-y-2 text-xs leading-relaxed text-slate-600 dark:text-slate-300 [&_strong]:font-medium [&_strong]:text-slate-800 dark:[&_strong]:text-slate-200">
         <ManifestoContent />
       </div>
       <div className="mt-3 flex justify-end">

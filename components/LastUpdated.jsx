@@ -19,7 +19,7 @@ export default function LastUpdated({ label }) {
     <p
       onTransitionEnd={() => hidden && setRemoved(true)}
       className={
-        "flex items-center justify-center gap-1.5 text-xs text-slate-500 transition-opacity duration-700 " +
+        "flex items-center justify-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 transition-opacity duration-700 " +
         (hidden ? "opacity-0" : "opacity-100")
       }
     >

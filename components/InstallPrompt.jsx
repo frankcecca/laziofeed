@@ -69,7 +69,7 @@ export default function InstallPrompt() {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-sky-200 bg-white/95 px-4 py-3 shadow-[0_-2px_12px_rgba(10,77,162,0.08)] backdrop-blur">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-sky-200 dark:border-sky-500/30 bg-white/95 dark:bg-night-bg/95 px-4 py-3 shadow-[0_-2px_12px_rgba(10,77,162,0.08)] backdrop-blur">
       <div className="mx-auto flex max-w-[640px] items-center gap-3">
         <img
           src="/logo-mark.svg"
@@ -79,10 +79,10 @@ export default function InstallPrompt() {
           className="h-9 w-9 flex-shrink-0"
         />
         <div className="min-w-0 flex-1">
-          <p className="text-sm font-medium text-slate-900">
+          <p className="text-sm font-medium text-slate-900 dark:text-slate-100">
             Aggiungi Lazio24 alla schermata Home
           </p>
-          <p className="text-xs leading-snug text-slate-500">
+          <p className="text-xs leading-snug text-slate-500 dark:text-slate-400">
             {ios ? (
               <>
                 Tocca{" "}
@@ -124,7 +124,7 @@ export default function InstallPrompt() {
           type="button"
           onClick={dismiss}
           aria-label="Chiudi"
-          className="flex-shrink-0 text-slate-400 transition hover:text-slate-600"
+          className="flex-shrink-0 text-slate-400 transition hover:text-slate-600 dark:hover:text-slate-300"
         >
           <svg
             width="18"

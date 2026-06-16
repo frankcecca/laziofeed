@@ -19,12 +19,12 @@ function Heart({ className }) {
 export default function SupportButton({ variant = "header" }) {
   if (variant === "card") {
     return (
-      <section className="rounded-xl border border-sky-200 bg-sky-50 p-4 text-center">
-        <Heart className="mx-auto mb-1.5 text-lazio-blue" />
-        <p className="text-sm font-semibold text-slate-900">
+      <section className="rounded-xl border border-sky-200 dark:border-sky-500/30 bg-sky-50 dark:bg-sky-500/10 p-4 text-center">
+        <Heart className="mx-auto mb-1.5 text-lazio-blue dark:text-sky-400" />
+        <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">
           Aiuta Lazio24 a crescere
         </p>
-        <p className="mx-auto mt-1 max-w-xs text-xs leading-relaxed text-slate-600">
+        <p className="mx-auto mt-1 max-w-xs text-xs leading-relaxed text-slate-600 dark:text-slate-300">
           Il progetto è gratuito e senza pubblicità invasiva. Se ti è utile,
           fai una piccola donazione: ci aiuti a coprire i costi e a migliorarlo.
         </p>
@@ -46,7 +46,7 @@ export default function SupportButton({ variant = "header" }) {
       href={SUPPORT_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-1 rounded-full bg-sky-100 px-3 py-1 text-xs font-medium text-lazio-blue transition active:scale-95"
+      className="inline-flex items-center gap-1 rounded-full bg-sky-100 dark:bg-sky-500/15 px-3 py-1 text-xs font-medium text-lazio-blue dark:text-sky-400 transition active:scale-95"
     >
       <Heart />
       Sostieni

@@ -7,6 +7,14 @@
   --card: #ffffff;
 }
 
+/* Tema scuro automatico (blu notte) in base alla preferenza di sistema. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1626;
+    --card: #122039;
+  }
+}
+
 * {
   -webkit-tap-highlight-color: transparent;
 }
@@ -53,6 +61,14 @@ body {
 .legal a {
   color: #0a4da2;
   text-decoration: underline;
+}
+@media (prefers-color-scheme: dark) {
+  .legal h2 {
+    color: #e2e8f0;
+  }
+  .legal a {
+    color: #38bdf8;
+  }
 }
 .legal ul {
   list-style: disc;

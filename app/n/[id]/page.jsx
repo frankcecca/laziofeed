@@ -55,7 +55,7 @@ export default async function StoryShare({ params }) {
   if (!story) {
     return (
       <article className="py-8 text-center">
-        <p className="text-sm leading-relaxed text-slate-600">
+        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
           Questa notizia non è più tra le ultime 24 ore.
           <br />
           Su Lazio24 le notizie restano finché sono attuali, poi scorrono via.
@@ -79,19 +79,19 @@ export default async function StoryShare({ params }) {
     <article className="py-2">
       <Link
         href="/"
-        className="text-xs font-medium text-lazio-blue hover:underline"
+        className="text-xs font-medium text-lazio-blue dark:text-sky-400 hover:underline"
       >
         ← Lazio24
       </Link>
 
-      <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 bg-white">
+      <div className="mt-3 overflow-hidden rounded-xl border border-slate-200 dark:border-night-border bg-white dark:bg-night-card">
         <div className="p-4">
-          <h1 className="text-lg font-semibold leading-snug text-slate-900">
+          <h1 className="text-lg font-semibold leading-snug text-slate-900 dark:text-slate-100">
             {story.title}
           </h1>
           {story.summary && (
             <>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                 {story.summary}
               </p>
               <p className="mt-1.5 text-xs italic text-slate-400">
@@ -100,7 +100,7 @@ export default async function StoryShare({ params }) {
             </>
           )}
 
-          <p className="mt-4 text-xs font-medium uppercase tracking-wide text-slate-500">
+          <p className="mt-4 text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">
             Leggi la notizia sulla fonte
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -110,7 +110,7 @@ export default async function StoryShare({ params }) {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-xs font-medium text-lazio-blue transition hover:bg-sky-100"
+                className="inline-flex items-center gap-1 rounded-full border border-sky-200 dark:border-sky-500/30 bg-sky-50 dark:bg-sky-500/10 px-3 py-1.5 text-xs font-medium text-lazio-blue dark:text-sky-400 transition hover:bg-sky-100 dark:hover:bg-sky-500/20"
               >
                 {s.name} ↗
               </a>
@@ -121,7 +121,7 @@ export default async function StoryShare({ params }) {
 
       <Link
         href="/"
-        className="mt-4 block text-center text-xs text-slate-500 hover:text-lazio-blue hover:underline"
+        className="mt-4 block text-center text-xs text-slate-500 dark:text-slate-400 hover:text-lazio-blue dark:hover:text-sky-400 hover:underline"
       >
         Tutte le notizie delle ultime 24 ore →
       </Link>

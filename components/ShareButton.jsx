@@ -36,7 +36,7 @@ export default function ShareButton({ id, title, onDark }) {
         "inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium transition active:scale-95 " +
         (onDark
           ? "border-white/40 text-white hover:border-white hover:bg-white/10"
-          : "border-slate-200 text-slate-500 hover:border-sky-300 hover:text-lazio-blue")
+          : "border-slate-200 dark:border-night-border text-slate-500 dark:text-slate-400 hover:border-sky-300 dark:hover:border-sky-500/50 hover:text-lazio-blue dark:hover:text-sky-400")
       }
     >
       <svg

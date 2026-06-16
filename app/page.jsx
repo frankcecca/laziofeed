@@ -71,7 +71,7 @@ function updateLabel(iso) {
 function TrendExplainer() {
   return (
     <p>
-      Il <span className="font-medium text-slate-800">Trend</span> indica quanto
+      Il <span className="font-medium text-slate-800 dark:text-slate-200">Trend</span> indica quanto
       una notizia è calda in questo momento: combina la copertura (quante
       testate diverse la riprendono nello stesso arco di tempo) e la freschezza
       (cala con le ore). Va da 0 a 100.
@@ -91,14 +91,14 @@ function Meta({ source, publishedAt, badge, coverage, onDark }) {
         <span
           className={
             "rounded px-2 py-0.5 text-xs font-medium " +
-            (onDark ? "bg-white/20 text-white" : "bg-sky-100 text-lazio-blue")
+            (onDark ? "bg-white/20 text-white" : "bg-sky-100 dark:bg-sky-500/15 text-lazio-blue dark:text-sky-400")
           }
         >
           {badge}
         </span>
       )}
       {text && (
-        <span className={"text-xs " + (onDark ? "text-sky-100" : "text-slate-500")}>
+        <span className={"text-xs " + (onDark ? "text-sky-100" : "text-slate-500 dark:text-slate-400")}>
           {text}
         </span>
       )}
@@ -108,7 +108,7 @@ function Meta({ source, publishedAt, badge, coverage, onDark }) {
             "rounded-full border px-2 py-0.5 text-xs font-medium " +
             (onDark
               ? "border-white/40 text-white"
-              : "border-slate-200 text-slate-500")
+              : "border-slate-200 dark:border-night-border text-slate-500 dark:text-slate-400")
           }
         >
           {coverage} fonti
@@ -153,7 +153,7 @@ function SourceChips({ sources, onDark }) {
     <div className="mt-3 flex items-center gap-2">
       <span
         className={
-          "flex-shrink-0 text-xs " + (onDark ? "text-sky-100" : "text-slate-500")
+          "flex-shrink-0 text-xs " + (onDark ? "text-sky-100" : "text-slate-500 dark:text-slate-400")
         }
       >
         Leggi su
@@ -169,7 +169,7 @@ function SourceChips({ sources, onDark }) {
             aria-label={`Apri su ${s.name}`}
             className={
               "flex h-8 w-8 flex-shrink-0 items-center justify-center overflow-hidden rounded-full transition active:scale-95 " +
-              (onDark ? "bg-white/20" : "bg-sky-100")
+              (onDark ? "bg-white/20" : "bg-sky-100 dark:bg-sky-500/15")
             }
           >
             {s.favicon ? (
@@ -184,7 +184,7 @@ function SourceChips({ sources, onDark }) {
             ) : (
               <span
                 className={
-                  "text-xs font-medium " + (onDark ? "text-white" : "text-lazio-blue")
+                  "text-xs font-medium " + (onDark ? "text-white" : "text-lazio-blue dark:text-sky-400")
                 }
               >
                 {sourceInitials(s.name)}
@@ -213,11 +213,11 @@ function CompactCard({ a, trend, hideTime }) {
         publishedAt={hideTime ? undefined : a.publishedAt}
         coverage={multi ? undefined : a.coverage}
       />
-      <h3 className="text-base font-semibold leading-snug text-slate-900">
+      <h3 className="text-base font-semibold leading-snug text-slate-900 dark:text-slate-100">
         {a.title}
       </h3>
       {a.summary && (
-        <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-slate-500">
+        <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
           {a.summary}
         </p>
       )}
@@ -238,7 +238,7 @@ function CompactCard({ a, trend, hideTime }) {
   // azzurro del box "Il tema più importante".
   if (multi) {
     return (
-      <div className="flex flex-col overflow-hidden rounded-xl border-2 border-sky-200 bg-white p-3">
+      <div className="flex flex-col overflow-hidden rounded-xl border-2 border-sky-200 dark:border-sky-500/30 bg-white dark:bg-night-card p-3">
         {body}
         {actions}
       </div>
@@ -247,7 +247,7 @@ function CompactCard({ a, trend, hideTime }) {
 
   // Fonte singola: il contenuto è cliccabile, le azioni restano fuori dal link.
   return (
-    <div className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white p-3">
+    <div className="flex flex-col overflow-hidden rounded-xl border border-slate-200 dark:border-night-border bg-white dark:bg-night-card p-3">
       <a
         href={a.url}
         target="_blank"
@@ -266,11 +266,11 @@ export default async function Home() {
 
   if (!articles.length) {
     return (
-      <div className="rounded-xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-500">
+      <div className="rounded-xl border border-dashed border-slate-300 dark:border-slate-600 bg-white dark:bg-night-card p-8 text-center text-slate-500 dark:text-slate-400">
         <p className="font-medium">Nessuna notizia ancora.</p>
         <p className="mt-2 text-sm">
           Esegui{" "}
-          <code className="rounded bg-slate-100 px-1">npm run collect</code> per
+          <code className="rounded bg-slate-100 dark:bg-slate-800 px-1">npm run collect</code> per
           popolare il feed.
         </p>
       </div>
@@ -372,7 +372,7 @@ export default async function Home() {
 
       {/* Giornata tranquilla: poche notizie nelle ultime 24 ore */}
       {quiet && (
-        <div className="rounded-xl border border-sky-200 bg-sky-50 p-3 text-center text-xs leading-relaxed text-lazio-blue">
+        <div className="rounded-xl border border-sky-200 dark:border-sky-500/30 bg-sky-50 dark:bg-sky-500/10 p-3 text-center text-xs leading-relaxed text-lazio-blue dark:text-sky-400">
           Giornata tranquilla in casa Lazio: poche notizie nelle ultime 24 ore.
           Ecco comunque cosa è successo.
         </div>
@@ -380,8 +380,8 @@ export default async function Home() {
 
       {/* Tema del momento — digest AI */}
       {digest && (
-        <section className="rounded-xl border border-sky-200 bg-sky-50 p-4">
-          <div className="mb-1.5 flex items-center gap-1.5 text-lazio-blue">
+        <section className="rounded-xl border border-sky-200 dark:border-sky-500/30 bg-sky-50 dark:bg-sky-500/10 p-4">
+          <div className="mb-1.5 flex items-center gap-1.5 text-lazio-blue dark:text-sky-400">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
               <path d="M13 2 3 14h7l-1 8 10-12h-7z" />
             </svg>
@@ -389,7 +389,7 @@ export default async function Home() {
               Il tema del momento
             </span>
           </div>
-          <p className="text-sm leading-relaxed text-slate-700">{digest}</p>
+          <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-200">{digest}</p>
         </section>
       )}
 
@@ -416,11 +416,11 @@ export default async function Home() {
               publishedAt={hero.lastAt || hero.publishedAt}
               coverage={heroMulti ? undefined : hero.coverage}
             />
-            <h2 className="text-lg font-semibold leading-snug text-slate-900">
+            <h2 className="text-lg font-semibold leading-snug text-slate-900 dark:text-slate-100">
               {hero.title}
             </h2>
             {hero.summary && (
-              <p className="mt-1.5 text-sm leading-relaxed text-slate-600">
+              <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                 {hero.summary}
               </p>
             )}
@@ -429,7 +429,7 @@ export default async function Home() {
         );
 
         return (
-          <section className="overflow-hidden rounded-2xl bg-[#eef4fb] shadow-[6px_6px_14px_#c8d6ea,-6px_-6px_14px_#ffffff]">
+          <section className="overflow-hidden rounded-2xl bg-[#eef4fb] shadow-[6px_6px_14px_#c8d6ea,-6px_-6px_14px_#ffffff] dark:bg-night-raised dark:shadow-[6px_6px_14px_#05090f,-6px_-6px_14px_#1d3358]">
             {heroMulti ? (
               heroBody
             ) : (
@@ -483,18 +483,18 @@ export default async function Home() {
       {/* Timeline verticale: l'unica sezione cronologica */}
       <div className="relative">
         <span
-          className="pointer-events-none absolute left-[39px] top-1 bottom-1 w-px bg-slate-200"
+          className="pointer-events-none absolute left-[39px] top-1 bottom-1 w-px bg-slate-200 dark:bg-slate-700"
           aria-hidden="true"
         />
         <div className="space-y-3">
           {latest.map((a) => (
             <div key={a.id} className="flex items-start gap-3">
               <div className="flex w-11 flex-shrink-0 items-center justify-end gap-1.5 pt-6">
-                <span className="text-xs font-medium leading-none text-slate-500">
+                <span className="text-xs font-medium leading-none text-slate-500 dark:text-slate-400">
                   {timeAgoShort(a.lastAt || a.publishedAt)}
                 </span>
                 <span
-                  className="relative h-2.5 w-2.5 flex-shrink-0 rounded-full bg-lazio-blue ring-2 ring-white"
+                  className="relative h-2.5 w-2.5 flex-shrink-0 rounded-full bg-lazio-blue ring-2 ring-white dark:ring-night-bg"
                   aria-hidden="true"
                 />
               </div>

@@ -29,12 +29,12 @@ export default function Fonti() {
     <article className="py-2">
       <Link
         href="/"
-        className="text-xs font-medium text-lazio-blue hover:underline"
+        className="text-xs font-medium text-lazio-blue dark:text-sky-400 hover:underline"
       >
         ← Torna a Lazio24
       </Link>
-      <h1 className="mt-3 text-xl font-bold text-slate-900">Fonti</h1>
-      <p className="mt-1 text-sm leading-relaxed text-slate-600">
+      <h1 className="mt-3 text-xl font-bold text-slate-900 dark:text-slate-100">Fonti</h1>
+      <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
         Le {SOURCES.length} fonti da cui Lazio24 raccoglie le notizie, tramite i
         rispettivi feed RSS. Ogni notizia rimanda sempre all’articolo originale.
       </p>
@@ -45,9 +45,9 @@ export default function Fonti() {
           return (
             <li
               key={s.url}
-              className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3"
+              className="flex items-center gap-3 rounded-xl border border-slate-200 dark:border-night-border bg-white dark:bg-night-card p-3"
             >
-              <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center overflow-hidden rounded-full bg-sky-100">
+              <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center overflow-hidden rounded-full bg-sky-100 dark:bg-sky-500/15">
                 <SourceLogo
                   src={site ? `/sources/${site}.png` : null}
                   alt={s.name}
@@ -55,12 +55,12 @@ export default function Fonti() {
                 />
               </span>
               <div className="min-w-0 flex-1">
-                <p className="text-sm font-semibold text-slate-900">{s.name}</p>
+                <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">{s.name}</p>
                 <a
                   href={s.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block truncate text-xs text-slate-500 hover:text-lazio-blue hover:underline"
+                  className="block truncate text-xs text-slate-500 dark:text-slate-400 hover:text-lazio-blue dark:hover:text-sky-400 hover:underline"
                 >
                   {s.url}
                 </a>

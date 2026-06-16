@@ -75,12 +75,12 @@ export default function PullToRefresh() {
       }}
       aria-hidden="true"
     >
-      <div className="mt-1 rounded-full bg-white p-2 shadow-md ring-1 ring-slate-200">
+      <div className="mt-1 rounded-full bg-white dark:bg-night-card p-2 shadow-md ring-1 ring-slate-200 dark:ring-night-border">
         <svg
           width="20"
           height="20"
           viewBox="0 0 24 24"
-          className={refreshing ? "animate-spin text-lazio-blue" : "text-lazio-blue"}
+          className={refreshing ? "animate-spin text-lazio-blue dark:text-sky-400" : "text-lazio-blue dark:text-sky-400"}
           style={refreshing ? undefined : { transform: `rotate(${dist * 3}deg)` }}
           aria-hidden="true"
         >

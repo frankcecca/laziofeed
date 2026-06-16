@@ -8,7 +8,7 @@ export default function SourceLogo({ src, alt, fallback }) {
 
   if (!src || error) {
     return (
-      <span className="text-xs font-medium text-lazio-blue">{fallback}</span>
+      <span className="text-xs font-medium text-lazio-blue dark:text-sky-400">{fallback}</span>
     );
   }
   return (
