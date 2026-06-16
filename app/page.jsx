@@ -25,7 +25,6 @@ async function getData() {
       digest: null,
       topStory: null,
       articles: [],
-      market: null,
     };
   }
 }
@@ -265,7 +264,7 @@ function CompactCard({ a, trend, hideTime }) {
 }
 
 export default async function Home() {
-  const { updatedAt, edition, digest, articles, market } = await getData();
+  const { updatedAt, edition, digest, articles } = await getData();
 
   if (!articles.length) {
     return (
@@ -376,8 +375,8 @@ export default async function Home() {
       {/* Opt-in notifiche push (si mostra solo se supportato) */}
       <NotificationToggle />
 
-      {/* Andamento del titolo in Borsa (fine giornata) */}
-      <MarketWidget market={market} />
+      {/* Andamento del titolo in Borsa (embed TradingView, dati correnti) */}
+      <MarketWidget />
 
       {/* Giornata tranquilla: poche notizie nelle ultime 24 ore */}
       {quiet && (

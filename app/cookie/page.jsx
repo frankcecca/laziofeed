@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Cookie() {
   return (
-    <LegalPage title="Cookie Policy" updated="12 giugno 2026">
+    <LegalPage title="Cookie Policy" updated="16 giugno 2026">
       <p>
         I cookie sono piccoli file di testo che i siti salvano sul dispositivo
         dell’utente. Questa pagina spiega come Lazio24 li utilizza.
@@ -44,6 +44,14 @@ export default function Cookie() {
         direttamente sul Sito: il tuo browser non effettua richieste a servizi
         esterni per visualizzarle. Se scegli di effettuare una donazione, il
         link ti porta su PayPal, che applica la propria informativa cookie.
+      </p>
+      <p>
+        Nella home è presente un piccolo widget con l’andamento del titolo
+        S.S. Lazio in Borsa, fornito tramite l’<strong>embed di TradingView</strong>.
+        Per mostrarlo, il browser carica uno script di TradingView, che può
+        installare propri cookie o identificatori tecnici e tratta i dati
+        secondo la <a href="https://www.tradingview.com/privacy-policy/" target="_blank" rel="noopener noreferrer">privacy policy di TradingView</a>.
+        Il widget viene caricato solo per questa funzione.
       </p>
 
       <h2>Come gestire i cookie</h2>

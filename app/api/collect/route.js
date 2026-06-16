@@ -22,17 +22,13 @@ export async function GET(request) {
   }
 
   try {
-    const { edition, digest, topStory, articles, market } = await collect();
+    const { edition, digest, topStory, articles } = await collect();
     const out = path.join(process.cwd(), "data", "articles.json");
     await mkdir(path.dirname(out), { recursive: true });
     const updatedAt = new Date().toISOString();
     await writeFile(
       out,
-      JSON.stringify(
-        { updatedAt, edition, digest, topStory, articles, market },
-        null,
-        2
-      )
+      JSON.stringify({ updatedAt, edition, digest, topStory, articles }, null, 2)
     );
     // Notifica push se è emersa una nuova notizia più importante (non blocca
     // la raccolta in caso di errore).

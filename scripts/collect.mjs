@@ -18,19 +18,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(__dirname, "..", "data", "articles.json");
 
 try {
-  const { edition, digest, topStory, articles, market } = await collect();
+  const { edition, digest, topStory, articles } = await collect();
   await mkdir(path.dirname(OUT), { recursive: true });
   await writeFile(
     OUT,
     JSON.stringify(
-      {
-        updatedAt: new Date().toISOString(),
-        edition,
-        digest,
-        topStory,
-        articles,
-        market,
-      },
+      { updatedAt: new Date().toISOString(), edition, digest, topStory, articles },
       null,
       2
     )
