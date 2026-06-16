@@ -6,6 +6,7 @@ import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { collect } from "../lib/collect.js";
+import { maybeNotifyTopStory } from "../lib/push.js";
 
 // In locale carica le variabili dal .env (su Railway il file non esiste e si
 // usano le env reali dell'ambiente: l'eventuale errore viene ignorato).
@@ -28,6 +29,11 @@ try {
     )
   );
   console.log(`\n✅ Salvati ${articles.length} articoli in data/articles.json`);
+  try {
+    await maybeNotifyTopStory(topStory);
+  } catch (e) {
+    console.error("push notify error:", e?.message || e);
+  }
   // fetch (undici) tiene aperte connessioni keep-alive: usciamo esplicitamente
   // così il prompt del terminale torna subito.
   process.exit(0);

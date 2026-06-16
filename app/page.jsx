@@ -6,6 +6,7 @@ import IntroCard from "../components/IntroCard";
 import ShareButton from "../components/ShareButton";
 import TrendBadge from "../components/TrendBadge";
 import LastUpdated from "../components/LastUpdated";
+import NotificationToggle from "../components/NotificationToggle";
 import { SITE_URL, SITE_NAME } from "../lib/site";
 
 // Sempre dinamica: legge i dati raccolti sul volume a ogni richiesta, così
@@ -369,6 +370,9 @@ export default async function Home() {
 
       {/* Ultim'ora: le 4 notizie più calde che scorrono */}
       <NewsTicker items={byTrending.slice(0, 4)} />
+
+      {/* Opt-in notifiche push (si mostra solo se supportato) */}
+      <NotificationToggle />
 
       {/* Giornata tranquilla: poche notizie nelle ultime 24 ore */}
       {quiet && (

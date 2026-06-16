@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { collect } from "../../../lib/collect";
+import { maybeNotifyTopStory } from "../../../lib/push";
 
 // Esecuzione lato server (usa fs, fetch, rss-parser): runtime Node, non edge.
 export const runtime = "nodejs";
@@ -29,6 +30,13 @@ export async function GET(request) {
       out,
       JSON.stringify({ updatedAt, edition, digest, topStory, articles }, null, 2)
     );
+    // Notifica push se è emersa una nuova notizia più importante (non blocca
+    // la raccolta in caso di errore).
+    try {
+      await maybeNotifyTopStory(topStory);
+    } catch (e) {
+      console.error("push notify error:", e?.message || e);
+    }
     return NextResponse.json({ ok: true, count: articles.length, updatedAt });
   } catch (err) {
     return NextResponse.json(
