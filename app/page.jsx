@@ -7,6 +7,7 @@ import ShareButton from "../components/ShareButton";
 import TrendBadge from "../components/TrendBadge";
 import LastUpdated from "../components/LastUpdated";
 import NotificationToggle from "../components/NotificationToggle";
+import MarketWidget from "../components/MarketWidget";
 import { SITE_URL, SITE_NAME } from "../lib/site";
 
 // Sempre dinamica: legge i dati raccolti sul volume a ogni richiesta, così
@@ -24,6 +25,7 @@ async function getData() {
       digest: null,
       topStory: null,
       articles: [],
+      market: null,
     };
   }
 }
@@ -263,7 +265,7 @@ function CompactCard({ a, trend, hideTime }) {
 }
 
 export default async function Home() {
-  const { updatedAt, edition, digest, articles } = await getData();
+  const { updatedAt, edition, digest, articles, market } = await getData();
 
   if (!articles.length) {
     return (
@@ -373,6 +375,9 @@ export default async function Home() {
 
       {/* Opt-in notifiche push (si mostra solo se supportato) */}
       <NotificationToggle />
+
+      {/* Andamento del titolo in Borsa (fine giornata) */}
+      <MarketWidget market={market} />
 
       {/* Giornata tranquilla: poche notizie nelle ultime 24 ore */}
       {quiet && (
