@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { collect } from "../../../lib/collect";
-import { maybeNotifyTopStory } from "../../../lib/push";
+import { maybeNotifyTopStory, maybeSendEveningRecap } from "../../../lib/push";
 
 // Esecuzione lato server (usa fs, fetch, rss-parser): runtime Node, non edge.
 export const runtime = "nodejs";
@@ -34,6 +34,7 @@ export async function GET(request) {
     // la raccolta in caso di errore).
     try {
       await maybeNotifyTopStory(topStory);
+      await maybeSendEveningRecap({ digest, articles });
     } catch (e) {
       console.error("push notify error:", e?.message || e);
     }

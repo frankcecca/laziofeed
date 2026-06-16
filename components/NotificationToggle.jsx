@@ -131,10 +131,11 @@ export default function NotificationToggle() {
       </span>
       <div className="min-w-0 flex-1">
         <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">
-          Ricevi la notizia del momento
+          Attiva le notifiche
         </p>
         <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-300">
-          Una notifica quando esce la notizia più importante. Niente spam.
+          La notizia più importante quando esce e il recap della giornata in
+          serata. Niente spam.
         </p>
       </div>
       <button
