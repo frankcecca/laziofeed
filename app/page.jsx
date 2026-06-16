@@ -375,9 +375,6 @@ export default async function Home() {
       {/* Opt-in notifiche push (si mostra solo se supportato) */}
       <NotificationToggle />
 
-      {/* Andamento del titolo in Borsa (embed TradingView, dati correnti) */}
-      <MarketWidget />
-
       {/* Giornata tranquilla: poche notizie nelle ultime 24 ore */}
       {quiet && (
         <div className="rounded-xl border border-sky-200 dark:border-sky-500/30 bg-sky-50 dark:bg-sky-500/10 p-3 text-center text-xs leading-relaxed text-lazio-blue dark:text-sky-400">
@@ -474,6 +471,9 @@ export default async function Home() {
           ))}
         </>
       )}
+
+      {/* Andamento del titolo in Borsa (embed TradingView, dati correnti) */}
+      <MarketWidget />
 
       {/* Ultime notizie in ordine cronologico */}
       <SectionHeader title="Ultime notizie">
