@@ -434,7 +434,7 @@ export default async function Home() {
         );
 
         return (
-          <section className="overflow-hidden rounded-2xl bg-[#eef4fb] shadow-[6px_6px_14px_#c8d6ea,-6px_-6px_14px_#ffffff] dark:bg-night-raised dark:shadow-[6px_6px_14px_#05090f,-6px_-6px_14px_#1d3358]">
+          <section className="overflow-hidden rounded-2xl bg-[#eef4fb] shadow-[6px_6px_14px_#c8d6ea,-5px_-5px_14px_#f1f6fc] dark:bg-night-raised dark:shadow-[6px_6px_14px_#05090f,-5px_-5px_14px_#1a2c4c]">
             {heroMulti ? (
               heroBody
             ) : (
