@@ -23,7 +23,7 @@ export default function SectionHeader({ title, children, aside }) {
 
   return (
     <div className="flex items-center gap-1.5 px-1 pt-2">
-      <h2 className="text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">
+      <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-300">
         {title}
       </h2>
       <button
