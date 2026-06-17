@@ -32,14 +32,14 @@ export default function SectionHeader({ title, children, aside }) {
         aria-label={`Maggiori informazioni: ${title}`}
         aria-haspopup="dialog"
         onClick={() => setOpen(true)}
-        className="inline-flex flex-shrink-0 items-center gap-1 text-[11px] font-medium text-lazio-blue transition hover:underline active:scale-95 dark:text-sky-400"
+        className="inline-flex flex-shrink-0 items-center gap-1 rounded-full bg-sky-100 px-2 py-0.5 text-[11px] font-medium text-lazio-blue transition hover:bg-sky-200 active:scale-95 dark:bg-sky-500/20 dark:text-sky-300 dark:hover:bg-sky-500/30"
       >
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" aria-hidden="true">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" aria-hidden="true">
           <circle cx="12" cy="12" r="9" />
           <path d="M12 11v5" strokeLinecap="round" />
           <circle cx="12" cy="7.5" r="0.6" fill="currentColor" stroke="none" />
         </svg>
-        Maggiori informazioni
+        Info
       </button>
 
       {open && (
