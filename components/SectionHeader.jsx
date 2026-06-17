@@ -32,12 +32,11 @@ export default function SectionHeader({ title, children, aside }) {
         aria-label={`Come funziona: ${title}`}
         aria-haspopup="dialog"
         onClick={() => setOpen(true)}
-        className="flex h-6 w-6 items-center justify-center text-slate-500 dark:text-slate-400 transition hover:text-lazio-blue dark:hover:text-sky-400"
+        className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-sky-100 text-lazio-blue transition hover:bg-sky-200 active:scale-95 dark:bg-sky-500/20 dark:text-sky-300 dark:hover:bg-sky-500/30"
       >
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <circle cx="12" cy="12" r="9" />
-          <path d="M12 11v5" strokeLinecap="round" />
-          <circle cx="12" cy="7.5" r="0.6" fill="currentColor" stroke="none" />
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <circle cx="12" cy="7" r="1.6" />
+          <rect x="10.4" y="10.5" width="3.2" height="8" rx="1.6" />
         </svg>
       </button>
 
