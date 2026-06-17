@@ -29,15 +29,17 @@ export default function SectionHeader({ title, children, aside }) {
       <button
         ref={triggerRef}
         type="button"
-        aria-label={`Come funziona: ${title}`}
+        aria-label={`Maggiori informazioni: ${title}`}
         aria-haspopup="dialog"
         onClick={() => setOpen(true)}
-        className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-sky-100 text-lazio-blue transition hover:bg-sky-200 active:scale-95 dark:bg-sky-500/20 dark:text-sky-300 dark:hover:bg-sky-500/30"
+        className="inline-flex flex-shrink-0 items-center gap-1 text-[11px] font-medium text-lazio-blue transition hover:underline active:scale-95 dark:text-sky-400"
       >
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <circle cx="12" cy="7" r="1.6" />
-          <rect x="10.4" y="10.5" width="3.2" height="8" rx="1.6" />
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 11v5" strokeLinecap="round" />
+          <circle cx="12" cy="7.5" r="0.6" fill="currentColor" stroke="none" />
         </svg>
+        Maggiori informazioni
       </button>
 
       {open && (
